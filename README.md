@@ -2,7 +2,7 @@
 
 ## Edge Node 1 and Edge Node 2
 
-Edge Node 1 and Edge Node 2 are used for pushing data from **local** to **/data/landing** and also do send notifications to Telegram. They will be put to cron job so it could be running automatically.
+Edge Node 1 and Edge Node 2 are used for pushing data from **local** to **/data/landing** and also do send notifications to Telegram using [telegram-send](https://github.com/rahiel/telegram-send). They will be put to cron job so it could be running automatically.
 
 ## moveHDFSToTransient
 
