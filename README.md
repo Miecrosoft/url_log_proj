@@ -10,7 +10,7 @@ This script is used to move data in HDFS (/data/landing) to **/data/transient** 
 
 ## moveLocalToTransient
 
-This is different with Edge Node 1 & 2 script. This script is used to move from **local*p to **/data/transient** directly. This script help me to skip **/data/landing** (Edge Node 1 and 2).
+This is different with Edge Node 1 & 2 script. This script is used to move from **local** to **/data/transient** directly. This script help me to skip **/data/landing** (Edge Node 1 and 2).
 
 ## moveTransientOverTrusted
 
