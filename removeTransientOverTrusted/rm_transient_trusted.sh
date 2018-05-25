@@ -11,11 +11,11 @@ fREMOVE() {
 	if [ $? -eq 0 ] && [ $countFile -gt 300 ]; then
 		echo "=============================="
 		echo "$? && $countFile > 300"
-		echo "hadoop fs -rm -R -skipTrash $i"
+		echo "`date +%Y-%m-%dT%H:%M:%S` hadoop fs -rm -R -skipTrash $i"
 		hadoop fs -rm -R -skipTrash $i
 		echo -e "============================== \n"
 	else
-		echo -e "Path $i tidak ada di trusted atau countFile <= 300 \n"
+		echo -e "`date +%Y-%m-%dT%H:%M:%S` Path $i tidak ada di trusted atau countFile <= 300 \n"
 	fi
 }
 
