@@ -1,6 +1,8 @@
 #!/bin/bash
 export PATH=$PATH
 
+DYes=$(date +"%Y%m%d" --date='-1 day')
+
 kinit -kt /home/usr_engineer/usr_engineer.keytab usr_engineer
 
 fMOVE() {
@@ -28,7 +30,7 @@ fMOVE() {
 	fi
 }
 
-for i in $(find /data/disks*/url_log | grep -v .ctrl | grep $1);do
+for i in $(find /data/disks*/url_log | grep -v .ctrl | grep $DYes);do
 	fMOVE
 	echo "I Love Meme"
 done&
